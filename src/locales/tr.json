@@ -1,0 +1,87 @@
+{
+  "back": "Geri",
+  "login": "Giriş",
+  "logout": "Çıkış Yap",
+  "email": "E-posta",
+  "password": "Şifre",
+  "loginButton": "Giriş Yap",
+  "registerButton": "Kayıt Ol",
+  "loginSuccess": "Giriş başarılı",
+  "loginFailed": "Giriş başarısız",
+
+  "register": "Kayıt Ol",
+  "usernameRequired": "Kullanıcı adı gerekli",
+  "nameRequired": "İsim gerekli",
+  "surnameRequired": "Soyisim gerekli",
+  "invalidEmail": "Geçersiz e-posta adresi",
+  "emailRequired": "E-posta gerekli",
+  "birthdateRequired": "Doğum tarihi gerekli",
+  "genderRequired": "Cinsiyet gerekli",
+  "passwordTooShort": "Şifre en az 8 karakter olmalıdır",
+  "passwordRequired": "Şifre gerekli",
+  "repasswordRequired": "Şifreyi tekrar giriniz",
+  "passwordsDoNotMatch": "Şifreler eşleşmeli",
+  "username": "Kullanıcı Adı",
+  "name": "Ad",
+  "surname": "Soyad",
+  "birthdate": "Doğum Tarihi",
+  "repassword": "Şifre tekrarı",
+  "registerSuccess": "Kayıt başarılı",
+  "registerFailed": "Kayıt başarısız",
+  "female": "Kadın",
+  "male": "Erkek",
+  "gender": "Cinsiyet",
+
+  "home":"Anasayfa",
+  "profile": "Profil",
+  "tab2": "Sekme 2",
+  "tab3": "Sekme 3",
+  "likes": "{{count}} beğeni",
+  "comments": "{{count}} yorum",
+  "followers": "Takipçi",
+  "following": "Takip Edilen",
+  "collection": "Koleksiyon",
+  "followMe": "Beni Takip Et",
+  "phone": "Telefon",
+  "website": "Web Sitesi",
+  "passwordChangeSuccess": "Şifre değiştirme işlemi başarılı.",
+  "passwordChangeFailed": "Şifre değiştirme işlemi başarısız",
+
+  "passwordChange": {
+    "changeTitle": "Şifre Değiştir",
+    "current": "Mevcut Şifre",
+    "new": "Yeni Şifre",
+    "confirm": "Yeni Şifre (Tekrar)"
+  },
+  "buttons": {
+    "change": "Değiştir",
+    "save": "Kaydet"
+  },
+  "errors": {
+    "required": "Bu alan zorunludur.",
+    "passwordLength": "Şifre en az 8 karakter olmalıdır.",
+    "passwordMatch": "Şifreler eşleşmelidir.",
+    "sessionExpired": {
+      "title": "Oturum Süresi Doldu",
+      "description": "Lütfen yeniden giriş yapın."
+    },
+    "accessDenied": {
+      "title": "Erişim Engellendi",
+      "description": "Bu işlemi gerçekleştirme izniniz yok."
+    },
+    "serverError": {
+      "title": "Sunucu Hatası",
+      "description": "Beklenmeyen bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "genericError": {
+      "title": "Hata",
+      "description": "Beklenmeyen bir hata oluştu: {{statusText}}"
+    },
+    "networkError": {
+      "title": "Ağ Hatası",
+      "description": "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin."
+    }
+  }
+
+
+}

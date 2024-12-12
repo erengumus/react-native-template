@@ -1,0 +1,86 @@
+{
+  "back": "Back",
+  "login": "Login",
+  "logout": "Logout",
+  "email": "Email",
+  "password": "Password",
+  "loginButton": "Login",
+  "registerButton": "Register",
+  "register": "Register",
+  "loginSuccess": "Login successful",
+  "loginFailed": "Login failed",
+
+  "usernameRequired": "Username is required",
+  "nameRequired": "Name is required",
+  "surnameRequired": "Surname is required",
+  "invalidEmail": "Invalid email address",
+  "emailRequired": "Email is required",
+  "birthdateRequired": "Birthdate is required",
+  "genderRequired": "Gender is required",
+  "passwordTooShort": "Password must be at least 8 characters",
+  "passwordRequired": "Password is required",
+  "repasswordRequired": "Re-enter password is required",
+  "passwordsDoNotMatch": "Passwords must match",
+  "username": "Username",
+  "name": "Name",
+  "surname": "Surname",
+  "birthdate": "Birthdate",
+  "repassword": "Re-enter password",
+  "registerSuccess": "Registration successful",
+  "registerFailed": "Registration failed",
+  "passwordChangeSuccess": "Password change successful",
+  "passwordChangeFailed": "Password change failed",
+  "female": "Female",
+  "male": "Male",
+  "gender": "Gender",
+
+  "home":"Home",
+  "profile": "Profile",
+  "tab2": "Tab 2",
+  "tab3": "Tab 3",
+  "likes": "{{count}} likes",
+  "comments": "View all {{count}} comments",
+  "followers": "Followers",
+  "following": "Following",
+  "collection": "Collection",
+  "followMe": "Follow Me",
+  "phone": "Phone",
+  "website": "Website",
+
+  "passwordChange": {
+    "changeTitle": "Change Password",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm New Password"
+  },
+  "buttons": {
+    "change": "Change",
+    "save": "Save"
+  },
+  "errors": {
+    "required": "This field is required.",
+    "passwordLength": "Password must be at least 8 characters.",
+    "passwordMatch": "Passwords must match.",
+    "sessionExpired": {
+      "title": "Session Expired",
+      "description": "Please login again."
+    },
+    "accessDenied": {
+      "title": "Access Denied",
+      "description": "You do not have permission to perform this action."
+    },
+    "serverError": {
+      "title": "Server Error",
+      "description": "An unexpected error occurred. Please try again later."
+    },
+    "genericError": {
+      "title": "Error",
+      "description": "An unexpected error occurred: {{statusText}}"
+    },
+    "networkError": {
+      "title": "Network Error",
+      "description": "Please check your internet connection and try again."
+    }
+  }
+}
+

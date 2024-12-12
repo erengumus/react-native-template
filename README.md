@@ -1,79 +1,132 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Template
 
-# Getting Started
+This is a starter template for a React Native application with pre-configured libraries and dependencies to accelerate development. The project is structured to support modern practices, including internationalization, form validation, and state management.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+---
 
-## Step 1: Start the Metro Server
+## Features
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **React Native 0.76.3**
+- Pre-configured **navigation** using `@react-navigation`.
+- Form validation with **Formik** and **Yup**.
+- Global state management for authentication.
+- Multilingual support using **i18next**.
+- Date and time handling with **dayjs**.
+- Customizable theming with **react-native-paper**.
+- Flash messages for notifications.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---
 
-```bash
-# using npm
-npm start
+## Table of Contents
 
-# OR using Yarn
-yarn start
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Folder Structure](#folder-structure)
+- [Dependencies](#dependencies)
+- [Configuration](#configuration)
+- [License](#license)
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-native-template.git
+   cd react-native-template
+   ```
+
+2. Install dependencies:
+   ```bash
+   yarn install
+   ```
+
+3. Install required pods (iOS only):
+   ```bash
+   cd ios
+   pod install
+   cd ..
+   ```
+
+4. Start the development server:
+   ```bash
+   yarn start
+   ```
+
+---
+
+## Scripts
+
+- `yarn start`: Start the development server.
+- `yarn android`: Build and run the app on an Android device/emulator.
+- `yarn ios`: Build and run the app on an iOS simulator.
+- `yarn lint`: Lint the codebase.
+
+---
+
+## Folder Structure
+
+```
+project-root/
+├── src/
+│   ├── components/         # Reusable components
+│   ├── constants/          # Constant values (e.g., API URLs)
+│   ├── locales/            # i18n configuration and translations
+│   ├── navigation/         # React Navigation setup
+│   ├── screens/            # Screen components
+│   ├── services/           # API calls and utilities
+│   ├── themes/             # Theme configuration (light/dark mode)
+│   └── App.js              # Entry point
+├── .babel.config.js        # Babel configuration
+├── package.json            # Project dependencies and scripts
+├── README.md               # Project documentation
+└── ...                     # Other configuration files
 ```
 
-## Step 2: Start your Application
+---
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Dependencies
 
-### For Android
+Here is a list of major dependencies used in this project:
 
-```bash
-# using npm
-npm run android
+| Dependency                         | Version   | Description                          |
+|------------------------------------|-----------|--------------------------------------|
+| `@react-native-async-storage/async-storage` | `^2.1.0`   | Storage utility for React Native    |
+| `@react-navigation/native`         | `^7.0.13` | Core library for navigation          |
+| `@react-navigation/stack`          | `^7.0.18` | Stack navigator for screen management|
+| `axios`                            | `^1.7.9`  | Promise-based HTTP client            |
+| `dayjs`                            | `^1.11.13`| Lightweight date utility library     |
+| `formik`                           | `^2.4.6`  | Form state management                |
+| `i18next`                          | `^24.0.5` | Internationalization library         |
+| `react-native-flash-message`       | `^0.4.2`  | Toast messages                       |
+| `react-native-paper`               | `^5.12.5` | Material design components           |
+| `react-native-vector-icons`        | `^10.2.0` | Icons library                        |
+| `yup`                              | `^1.5.0`  | Schema-based form validation         |
 
-# OR using Yarn
-yarn android
+For a full list of dependencies, see [package.json](package.json).
+
+---
+
+## Configuration
+
+### Environment Variables
+
+Create an `.env` file in the root directory and configure the following:
+
+```env
+BASE_URL=https://your-api-url.com
 ```
 
-### For iOS
+### Internationalization
 
-```bash
-# using npm
-npm run ios
+To add new translations, update the files in the `src/locales` directory.
 
-# OR using Yarn
-yarn ios
-```
+### Theming
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Customize themes in the `src/themes` directory.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+---
 
-## Step 3: Modifying your App
+## License
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
